@@ -6,6 +6,7 @@ class Math extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text('Matemáticas'),
+          backgroundColor: Color.fromARGB(255, 223, 78, 74),
         ),
         body: ListView(
           children: <Widget>[
@@ -14,14 +15,8 @@ class Math extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    leading: Icon(Icons.album),
                     title: Text('Álgebra'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => Math()),
-                      );
-                    },
+                    onTap: () {},
                   ),
                 ],
               ),
@@ -31,14 +26,8 @@ class Math extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    leading: Icon(Icons.album),
                     title: Text('Geometría'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => Math()),
-                      );
-                    },
+                    onTap: () {},
                   ),
                 ],
               ),
@@ -48,14 +37,8 @@ class Math extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    leading: Icon(Icons.album),
                     title: Text('Trignometría'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => Math()),
-                      );
-                    },
+                    onTap: () {},
                   ),
                 ],
               ),
@@ -65,14 +48,8 @@ class Math extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    leading: Icon(Icons.album),
                     title: Text('Cálculo diferencial'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => Math()),
-                      );
-                    },
+                    onTap: () {},
                   ),
                 ],
               ),
@@ -82,14 +59,8 @@ class Math extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    leading: Icon(Icons.album),
                     title: Text('Cálculo integral'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => Math()),
-                      );
-                    },
+                    onTap: () {},
                   ),
                 ],
               ),
@@ -99,14 +70,8 @@ class Math extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    leading: Icon(Icons.album),
                     title: Text('Cálculo multivariable'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => Math()),
-                      );
-                    },
+                    onTap: () {},
                   ),
                 ],
               ),
