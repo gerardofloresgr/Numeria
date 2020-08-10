@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class Math extends StatelessWidget {
+class Physic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Matemáticas'),
-          backgroundColor: Color.fromARGB(255, 223, 78, 74),
+          title: Text('Física'),
+          backgroundColor: Colors.green,
         ),
         body: ListView(
           children: <Widget>[
@@ -15,7 +15,7 @@ class Math extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    title: Text('Álgebra'),
+                    title: Text('Cinemática'),
                     onTap: () {},
                   ),
                 ],
@@ -26,7 +26,7 @@ class Math extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    title: Text('Geometría'),
+                    title: Text('Dinámica'),
                     onTap: () {},
                   ),
                 ],
@@ -37,7 +37,7 @@ class Math extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    title: Text('Trignometría'),
+                    title: Text('Estática'),
                     onTap: () {},
                   ),
                 ],
@@ -48,7 +48,7 @@ class Math extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    title: Text('Cálculo diferencial'),
+                    title: Text('Ondas'),
                     onTap: () {},
                   ),
                 ],
@@ -59,7 +59,7 @@ class Math extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    title: Text('Cálculo integral'),
+                    title: Text('Hidrostática'),
                     onTap: () {},
                   ),
                 ],
@@ -70,7 +70,7 @@ class Math extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    title: Text('Cálculo multivariable'),
+                    title: Text('Hidrodinámica'),
                     onTap: () {},
                   ),
                 ],

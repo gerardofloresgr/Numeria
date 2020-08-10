@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'screens/math.dart';
+import 'screens/math/math.dart';
+import 'screens/physic/physic.dart';
 
 void main() => runApp(Numeria());
 
@@ -23,18 +24,23 @@ class Home extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           Card(
+            color: Colors.red,
             child: Padding(
               padding: const EdgeInsets.all(5),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    leading: Icon(Icons.add, color: Colors.red),
-                    title: Text('Matemáticas',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, color: Colors.red)),
+                    leading: Icon(Icons.add, color: Colors.white),
+                    title: Text(
+                      'Matemáticas',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, color: Colors.white),
+                    ),
                     subtitle: Text(
-                        'Álgebra, Geometría, Trigonometría, Derivadas, Integrales y más'),
+                      'Álgebra, Geometría, Trigonometría, Derivadas, Integrales y más',
+                      style: TextStyle(color: Colors.white),
+                    ),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -47,22 +53,26 @@ class Home extends StatelessWidget {
             ),
           ),
           Card(
+            color: Colors.green,
             child: Padding(
               padding: const EdgeInsets.all(5),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    leading: Icon(Icons.toys, color: Colors.green),
+                    leading: Icon(Icons.toys, color: Colors.white),
                     title: Text('Física',
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, color: Colors.green)),
-                    subtitle: Text('Cinematica, Dinamica, Estatica y más'),
+                            fontWeight: FontWeight.bold, color: Colors.white)),
+                    subtitle: Text(
+                      'Cinematica, Dinamica, Estatica y más',
+                      style: TextStyle(color: Colors.white),
+                    ),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => Formules()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Physic()),
+                      );
                     },
                   )
                 ],
@@ -70,19 +80,21 @@ class Home extends StatelessWidget {
             ),
           ),
           Card(
+            color: Colors.lightGreen,
             child: Padding(
               padding: const EdgeInsets.all(5),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    leading: Icon(Icons.ac_unit, color: Colors.lightGreen),
+                    leading: Icon(Icons.ac_unit, color: Colors.white),
                     title: Text('Química',
                         style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.lightGreen)),
-                    subtitle:
-                        Text('Solubilidad, Temperatura, Estiquiometría y más'),
+                            fontWeight: FontWeight.bold, color: Colors.white)),
+                    subtitle: Text(
+                      'Solubilidad, Temperatura, Estiquiometría y más',
+                      style: TextStyle(color: Colors.white),
+                    ),
                     onTap: () {
                       // Navigator.push(
                       //   context,
@@ -95,18 +107,21 @@ class Home extends StatelessWidget {
             ),
           ),
           Card(
+            color: Colors.blue,
             child: Padding(
               padding: const EdgeInsets.all(5),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   ListTile(
-                    leading: Icon(Icons.code, color: Colors.blue),
+                    leading: Icon(Icons.code, color: Colors.white),
                     title: Text('Informática',
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, color: Colors.blue)),
-                    subtitle:
-                        Text('Estructuras, Algoritmos básicos, comandos y más'),
+                            fontWeight: FontWeight.bold, color: Colors.white)),
+                    subtitle: Text(
+                      'Estructuras, Algoritmos básicos, comandos y más',
+                      style: TextStyle(color: Colors.white),
+                    ),
                     onTap: () {
                       // Navigator.push(
                       //   context,
@@ -119,6 +134,7 @@ class Home extends StatelessWidget {
             ),
           ),
           Card(
+            color: Colors.orange,
             child: Padding(
               padding: const EdgeInsets.all(5),
               child: Column(
@@ -126,11 +142,14 @@ class Home extends StatelessWidget {
                 children: <Widget>[
                   ListTile(
                     leading:
-                        Icon(Icons.fiber_manual_record, color: Colors.orange),
+                        Icon(Icons.fiber_manual_record, color: Colors.white),
                     title: Text('Constantes',
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, color: Colors.orange)),
-                    subtitle: Text('Constantes fisicas universales'),
+                            fontWeight: FontWeight.bold, color: Colors.white)),
+                    subtitle: Text(
+                      'Constantes fisicas universales',
+                      style: TextStyle(color: Colors.white),
+                    ),
                     onTap: () {
                       // Navigator.push(
                       //   context,
